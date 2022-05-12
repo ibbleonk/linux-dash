@@ -7,7 +7,7 @@ var fs      = require('fs')
 var ws      = require('websocket').server
 var args    = require('yargs').argv
 var host    = args.host || process.env.LINUX_DASH_SERVER_HOST || '0.0.0.0'
-var port    = args.port || process.env.LINUX_DASH_SERVER_PORT || 80
+var port    = args.port || process.env.LINUX_DASH_SERVER_PORT || 21
 
 server.listen(port, host, function() {
   console.log('Linux Dash Server Started on ' + host + ':' + port + '!');
